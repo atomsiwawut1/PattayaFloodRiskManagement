@@ -117,11 +117,13 @@ X=data[feature_cols]
 
 #MLmodel="https://raw.githubusercontent.com/atomsiwawut1/FloodPrediction/453a18c6d71b18d9b0dd55c62a8a95a489aeb557/GIS_DATA/Flood%20Hazard%20Map.joblib"
 
-#loadmodel = joblib.load("./GIS_DATA\FloodRiskMap_ML_BGT.joblib")
-#predictEX= loadmodel.predict(X)
+loadmodel = joblib.load("./ML_Model\FloodRisk_ML_BGDT.joblib")
 
 
-#st.write(predictEX)        
+predictEX= loadmodel.predict(X)
+
+
+st.write(predictEX)        
 
 
 
