@@ -48,13 +48,14 @@ Landuse_map= {
 
 }
 
-
+st.header("Flood Risk assessment")
 
 empty1,content1,empty2,content2,empty3=st.columns([0.1,7,0.1,6,0.1])
 
 
 
 with content1:
+    
 	Annual_Rain = st.number_input("Annual_Rain",0,3000)
 	Annual_Rain_slider = st.slider('Annual Rainfall : Slider bar', 0, 3000, Annual_Rain)
 	Annual_Rain = Annual_Rain_slider
