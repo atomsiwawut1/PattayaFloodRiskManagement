@@ -120,7 +120,7 @@ X=data[feature_cols]
 #loadmodel = joblib.load("./ML_Model\FloodRisk_ML_BGDT.joblib")
 model_file_path = "./ML_Model\FloodRisk_ML_BGDT.pkl"
 
-# Load the pickled model
+# Load the pickled model ต้องใช้ pickle
 with open(model_file_path, "rb") as f:
     loaded_model = pickle.load(f)
 
