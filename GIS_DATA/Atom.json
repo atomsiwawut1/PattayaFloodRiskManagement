@@ -1,0 +1,165 @@
+{
+    "version": "v1",
+    "config": {
+      "visState": {
+        "layers": [
+          {
+            "type": "hexagonId",
+            "config": {
+              "dataId": "hex_data",
+              "label": "index",
+              "color": [
+                255,
+                203,
+                153
+              ],
+              "highlightColor": [
+                252,
+                242,
+                26,
+                255
+              ],
+              "columns": {
+                "hex_id": "index"
+              },
+              "isVisible": true,
+              "visConfig": {
+                "opacity": 0.8,
+                "colorRange": {
+                  "name": "Custom Palette",
+                  "type": "custom",
+                  "category": "Custom",
+                  "colors": [
+                    "#FFFFBF",
+                    "#FDAE61",
+                    "#D7191C",
+                    "#A6D96A"
+                  ]
+                },
+                "coverage": 1,
+                "enable3d": false,
+                "sizeRange": [
+                  0,
+                  500
+                ],
+                "coverageRange": [
+                  0,
+                  1
+                ],
+                "elevationScale": 5,
+                "enableElevationZoomFactor": true
+              },
+              "hidden": false,
+              "textLabel": [
+                {
+                  "field": null,
+                  "color": [
+                    255,
+                    255,
+                    255
+                  ],
+                  "size": 18,
+                  "offset": [
+                    0,
+                    0
+                  ],
+                  "anchor": "start",
+                  "alignment": "center"
+                }
+              ]
+            },
+            "visualChannels": {
+              "colorField": {
+                "name": "Class_Tr2",
+                "type": "string"
+              },
+              "colorScale": "ordinal",
+              "sizeField": null,
+              "sizeScale": "linear",
+              "coverageField": null,
+              "coverageScale": "linear"
+            }
+          }
+        ],
+        "interactionConfig": {
+          "tooltip": {
+            "fieldsToShow": {
+              "hex_data": [
+                {
+                  "name": "index",
+                  "format": null
+                },
+                {
+                  "name": "LU_LV1",
+                  "format": null
+                },
+                {
+                  "name": "Elev",
+                  "format": null
+                },
+                {
+                  "name": "Slope",
+                  "format": null
+                },
+                {
+                  "name": "FAR",
+                  "format": null
+                },
+                {
+                  "name": "BCR",
+                  "format": null
+                },
+                {
+                  "name": "Class_Tr2",
+                  "format": null
+                },
+                {
+                  "name": "PredictedFloodRisk",
+                  "format": null
+                }
+              ]
+            },
+            "compareMode": false,
+            "compareType": "absolute",
+            "enabled": true
+          },
+          "brush": {
+            "size": 0.5,
+            "enabled": false
+          },
+          "geocoder": {
+            "enabled": false
+          },
+          "coordinate": {
+            "enabled": true
+          }
+        },
+        "layerBlending": "additive",
+        "splitMaps": [],
+        "animationConfig": {
+          "currentTime": null,
+          "speed": 1
+        }
+      },
+      "mapState": {
+        "bearing": 0,
+        "dragRotate": false,
+        "latitude": 12.92,
+        "longitude": 100.916719,
+        "pitch": 0,
+        "zoom": 11,
+        "isSplit": false
+      },
+      "mapStyle": {
+        "styleType": "satellite",
+        "topLayerGroups": {},
+        "visibleLayerGroups": {},
+        "threeDBuildingColor": [
+          3.7245996603793508,
+          6.518049405663864,
+          13.036098811327728
+        ],
+        "mapStyles": {}
+      }
+    }
+  }
