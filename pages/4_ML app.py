@@ -131,9 +131,11 @@ predictEX = loaded_model.predict(X)
 
 
 
-mLink = 'https://raw.githubusercontent.com/atomsiwawut1/PattayaFloodRiskManagement/main/ML_Model/FloodRisk_ML_BGDT.pkl'
+#mLink = 'https://raw.githubusercontent.com/atomsiwawut1/PattayaFloodRiskManagement/main/ML_Model/FloodRisk_ML_BGDT.pkl'
 
 # mLink = 'https://github.com/atomsiwawut1/FloodPrediction/blob/main/GIS_DATA/FloodModel.pkl?raw=true'
+
+mLink = 'https://github.com/atomsiwawut1/PattayaFloodRiskManagement/blob/main/ML_Model/FloodRisk_ML_BGDT.pkl?raw=true'
 mfile = BytesIO(requests.get(mLink).content)
 loadmodel=joblib.load(mfile)
 predictEX= loadmodel.predict(X)
