@@ -29,8 +29,8 @@ hr {
 
 
 
-#MainMenu {visibility: hidden;}
-footer {visibility: hidden;}
+#MainMenu {visibility: visible;}
+footer {visibility: visible;}
 header {visibility: hidden;}
 
 
