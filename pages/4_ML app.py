@@ -125,11 +125,20 @@ model_file_path = "./ML_Model\FloodRisk_ML_BGDT.pkl"
 with open(model_file_path, "rb") as f:
     loaded_model = pickle.load(f)
 
-
 #predictEX= loadmodel.predict(X)
 
 predictEX = loaded_model.predict(X)
 
+
+
+mLink = 'https://raw.githubusercontent.com/atomsiwawut1/PattayaFloodRiskManagement/main/ML_Model/FloodRisk_ML_BGDT.pkl'
+
+# mLink = 'https://github.com/atomsiwawut1/FloodPrediction/blob/main/GIS_DATA/FloodModel.pkl?raw=true'
+mfile = BytesIO(requests.get(mLink).content)
+loadmodel=joblib.load(mfile)
+predictEX= loadmodel.predict(X)
+
+               
 
 st.write(predictEX)        
 
