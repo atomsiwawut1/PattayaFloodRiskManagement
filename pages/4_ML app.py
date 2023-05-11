@@ -119,15 +119,15 @@ X=data[feature_cols]
 #MLmodel="https://raw.githubusercontent.com/atomsiwawut1/FloodPrediction/453a18c6d71b18d9b0dd55c62a8a95a489aeb557/GIS_DATA/Flood%20Hazard%20Map.joblib"
 
 #loadmodel = joblib.load("./ML_Model\FloodRisk_ML_BGDT.joblib")
-model_file_path = "./ML_Model\FloodRisk_ML_BGDT.pkl"
+#model_file_path = "./ML_Model\FloodRisk_ML_BGDT.pkl"
 
 # Load the pickled model ต้องใช้ pickle
-with open(model_file_path, "rb") as f:
-    loaded_model = pickle.load(f)
+#with open(model_file_path, "rb") as f:
+#loaded_model = pickle.load(f)
 
 #predictEX= loadmodel.predict(X)
 
-predictEX = loaded_model.predict(X)
+#predictEX = loaded_model.predict(X)
 
 
 
