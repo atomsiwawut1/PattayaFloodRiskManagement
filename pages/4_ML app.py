@@ -43,13 +43,13 @@ Landuse_map= {
     "พื้นที่น้ำ (W)": 5,
     "พื้นที่เกษตรกรรม (A)": 4,
     "พื้นที่ชุมชนและสิ่งปลูกสร้าง (U)":3,
-    "(M)":2,
+    "พื้นที่เบ็ดเตล็ด (M)":2,
     "พื้นที่ป่าไม้ (F)":1,
     "อื่นๆ (ETC)":0
 
 }
 
-st.header("Flood Risk Assessment")
+st.header("Flood Susceptibility Assessment")
 
 empty1,content1,empty2,content2,empty3,content3,empty4=st.columns([0.1,1,0.1,1,0.1,1.5,0.1])
 
@@ -88,12 +88,12 @@ with content2:
 	st.write(Landuse)
 	
 	FAR = st.number_input("FAR (Floor to Area Ratio)",0,10)
-	FAR_slider = st.slider('', 0, 10, FAR)
+	FAR_slider = st.slider('-', 0, 10, FAR)
 	FAR= FAR_slider
 	st.write(FAR)
 	
 	BCR = st.number_input("Building Coverage Ratio (BCR)",0,100)
-	BCR_slider = st.slider('', 0, 100, BCR )
+	BCR_slider = st.slider('-', 0, 100, BCR )
 	BCR= BCR_slider
 	st.write(BCR)
 
