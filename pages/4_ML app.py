@@ -40,16 +40,16 @@ Soil_Drainage_Capacity_map = {
 
 Landuse_map= {
 	
-    "W": 5,
-    "A": 4,
-    "U":3,
-    "M":2,
-    "F":1,
-    "ETC":0
+    "พื้นที่น้ำ (W)": 5,
+    "พื้นที่เกษตรกรรม (A)": 4,
+    "พื้นที่ชุมชนและสิ่งปลูกสร้าง (U)":3,
+    "(M)":2,
+    "พื้นที่ป่าไม้ (F)":1,
+    "อื่นๆ (ETC)":0
 
 }
 
-st.header("Flood Risk assessment")
+st.header("Flood Risk Assessment")
 
 empty1,content1,empty2,content2,empty3,content3,empty4=st.columns([0.1,1,0.1,1,0.1,1.5,0.1])
 
@@ -63,12 +63,12 @@ with content1:
 	st.write(Annual_Rain)
 	
 	Degree_Slope = st.number_input("Slope",0,3000)
-	Degree_Slope_slider = st.slider('""', 0, 100, Degree_Slope)
+	Degree_Slope_slider = st.slider('', 0, 100, Degree_Slope)
 	Degree_Slope = Degree_Slope_slider
 	st.write(Degree_Slope)
 	
 	Elevation = st.number_input("Elevation",0,3000)
-	Elevation_slider = st.slider('""', 0, 1000, Elevation)
+	Elevation_slider = st.slider('', 0, 1000, Elevation)
 	Elevation = Elevation_slider
 	st.write(Elevation)
 

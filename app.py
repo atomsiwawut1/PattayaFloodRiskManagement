@@ -23,8 +23,8 @@ def main():
 			#### Pattaya Events
 			    https://www.pattayacityevents.com/TH/home.html.
 			#### App Content
-				- Map Section: Flood Hazard Map (Static Map)
-				- ML Map Section: Flood Hazard Map (Interactive Map)
+				- Map Section: Flood Risk Map (Interactive Map)
+				- Application of machine learning algorithms for flood susceptibility assessment and risk management
 
 			""")
 
